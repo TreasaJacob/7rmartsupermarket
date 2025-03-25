@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="username" value="11"></parameter>
+	<parameter name="password" value="admin"></parameter>
+	<parameter name="usertype" value="Admin"></parameter>
+  <test thread-count="5" name="parameters.xml">
+    <classes>
+      <class name="com.obsqura.rmart_Supermarket.Testscript.AdminPageTest">
+      <methods>
+		 <include name = "existingUser"> </include>
+	  </methods>
+	  </class>
+     
+    </classes>
+  </test> <!-- parameters.xml -->
+</suite> <!-- Suite -->
