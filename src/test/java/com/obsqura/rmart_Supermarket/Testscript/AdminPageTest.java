@@ -19,7 +19,7 @@ public class AdminPageTest extends Base {
 	  loginpage.enterUsernameAndPassword("admin", "admin");
 	  homepage=loginpage.clickOnSignin();
 	  adminpage =homepage.clickonMoreInfo();
-	  adminpage.clickNewButton().enterDetails("johnana", "Password","db").clickOnSave();
+	  adminpage.clickNewButton().enterDetails("johnanand", "Password","db").clickOnSave();
 	  boolean alert = adminpage.isAlertSuccessShow();
 	 Assert.assertTrue(alert, Constant.ERRORMESSAGEWHENUSERCREATIONFAILEDADMINPAGE);
   }
