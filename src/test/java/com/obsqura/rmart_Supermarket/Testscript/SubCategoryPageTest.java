@@ -20,7 +20,7 @@ public class SubCategoryPageTest extends Base {
 	  loginpage.enterUsernameAndPassword("admin", "admin");
 	  homepage = loginpage.clickOnSignin();
 	  subcategorypage=homepage.clickOnSubCategory();
-	  subcategorypage.clickOnNewButton().enterSubCategoryDetails(4, "Baby Dollsss").clickOnSaveButton();
+	  subcategorypage.clickOnNewButton().enterSubCategoryDetails(4, "flowers").clickOnSaveButton();
 	  boolean alert = subcategorypage.isAlertDisplayed();
 	  Assert.assertTrue(alert, Constant.ERRORMESSAGEWHENSUBCATEGORYNOTCREATEDSUCCESSFULLYSUBCATEGORYPAGE);
 	  
