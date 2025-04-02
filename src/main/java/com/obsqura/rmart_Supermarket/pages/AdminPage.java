@@ -23,6 +23,15 @@ public class AdminPage {
 	@FindBy(xpath = "//button[@name='Create']") WebElement clicksave;
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']") WebElement alertsuccess;
 	@FindBy(xpath = "//div[@class='alert alert-danger alert-dismissible']") WebElement alertfailure;
+	@FindBy(xpath = "(//a[contains(@onclick,'confirm')])[1]") WebElement deleteicon;
+	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']") WebElement userdeletealertsuccess;
+	@FindBy(xpath = "//a[@onclick='click_button(2)']") WebElement clickonsearchbuttoninthelistpage;
+	@FindBy(xpath = "//input[@id='un']") WebElement enterusernametosearch;
+	@FindBy(xpath = "//select[@id='ut']") WebElement selectusertypeforsearch;
+	@FindBy(xpath = "//button[@value='sr']") WebElement searchafterenteringdata;
+	@FindBy (xpath = "//table/tbody/tr/td[1]") WebElement searchedusernameelement;  //treasa
+	
+	
 	
 	public AdminPage clickNewButton() {
 		clicknewbutton.click();
@@ -33,16 +42,37 @@ public class AdminPage {
 		enterusername.sendKeys(username);
 		enterpassword.sendKeys(password);
 		selectusertype.click();
-		/*Select select = new Select(selectusertype);
-		select.selectByVisibleText(value);*/  //actual select before using page utility
-		//pageutility.selectByVisibleText(selectusertype, value);   
-		//pageutility.selectByIndex(selectusertype, value);
 		pageutility.selectByValue(selectusertype, value);
 		return this;
 		
 	}
 	public AdminPage clickOnSave() {
 		clicksave.click();
+		return this;
+	}
+	public AdminPage clickDeleteIconOfFirstUserInTheList() {
+		deleteicon.click();
+		driver.switchTo().alert().accept();
+		return this;
+	}
+	public AdminPage clickOnSearchButtonInTheListPage()
+	{
+		clickonsearchbuttoninthelistpage.click();
+		return this;
+	}
+	public AdminPage enterUsernameForSearch(String usernamesearch) {
+		enterusernametosearch.sendKeys(usernamesearch);
+		return this;
+	}
+	
+	public AdminPage selectUsertypeForSearch(String visibletext) {
+		selectusertypeforsearch.click();
+		pageutility.selectByVisibleText(selectusertypeforsearch,visibletext );
+		return this;
+	}
+	public AdminPage clickOnSearchAfterEnteringDetails()
+	{
+		searchafterenteringdata.click();
 		return this;
 	}
 	public boolean isAlertSuccessShow() {
@@ -52,6 +82,14 @@ public class AdminPage {
 	public boolean isFailAlertShow() {
 		return alertfailure.isDisplayed();
 	}
+	public boolean isUserDeleteAlertAppears()
+	{
+		return userdeletealertsuccess.isDisplayed();
+	}
+	public boolean isValidUsernameElementDisplayed() {
+		return searchedusernameelement.isDisplayed();
+	}
+
 		
 
 }

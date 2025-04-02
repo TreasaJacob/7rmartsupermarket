@@ -18,6 +18,16 @@ public class Constant {
 	public static final String ERRORMESSAGEWHENSUBCATEGORYNOTCREATEDSUCCESSFULLYSUBCATEGORYPAGE="News creation failed";
 	
 	public static final String ERROEMESSAGEWHENCATEGORYCREATIONFAILEDCATEGORYPAGE = "Category not created successfully";
+	
+	public static final String ERROEMESSAGEWHENCONTACTDETAILUPDATIONFAILED = "Contact not updated successfully";
+	
+	public static final String ERROEMESSAGEWHENUSERDELETIONFAILED = "User not deleted successfully";
+	
+	public static final String ERROEMESSAGEWHENCORRECTUSERNAMEANDUSERTYPESEARCHFAILED = "Search failed";
+	
+	public static final String IMAGE = System.getProperty("user.dir")+"//src//test//resources//orange.PNG";
+	
+	public static final String EXCELPATH = System.getProperty("user.dir")+"//src//test//resources//Test Data.xlsx";
 
 
 }

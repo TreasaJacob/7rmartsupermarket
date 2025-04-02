@@ -8,14 +8,17 @@ import org.testng.annotations.Test;
 import com.obsqura.rmart.constant.Constant;
 import com.obsqura.rmart_Supermarket.pages.HomePage;
 import com.obsqura.rmart_Supermarket.pages.LoginPage;
+import com.obsqura.rmat_utilities.ExcelUtility;
 
 public class LoginPageTest extends Base {
 	public LoginPage loginpage;
 	public HomePage homepage;
   @Test
-  public void verifyUserCanLoginUsingValidUsernameAndPassword() {
+  public void verifyUserCanLoginUsingValidUsernameAndPassword() throws Exception {
 	  LoginPage loginpage = new LoginPage(driver);
-	  loginpage.enterUsernameAndPassword("admin", "admin");
+	  String username = ExcelUtility.readName(1, 0, "Loginpage");
+	  String password = ExcelUtility.readName(1, 1, "Loginpage");
+	  loginpage.enterUsernameAndPassword(username,password);
 	  homepage=loginpage.clickOnSignin();
 	  String expected = "Dashboard | 7rmart supermarket";
 	  String actual = driver.getTitle();
@@ -24,9 +27,11 @@ public class LoginPageTest extends Base {
   }
   
   @Test
-  public void verifyUserCannotLoginUsingInvalidUsernameAndPassword() {
+  public void verifyUserCannotLoginUsingInvalidUsernameAndPassword() throws Exception {
 	  LoginPage loginpage = new LoginPage(driver);
-	  loginpage.enterUsernameAndPassword("admin1123", "admi11n");
+	  String username = ExcelUtility.readName(1, 0, "Loginpage");
+	  String password = ExcelUtility.readName(1, 1, "Loginpage");
+	  loginpage.enterUsernameAndPassword(username,password);
 	  homepage= loginpage.clickOnSignin();
 	  boolean text = loginpage.isSignInTextAppearsOnTop();
 	  Assert.assertTrue(text, Constant.ERRORMESSAGEWHILELOGINWITHINVALIDCREDENTIALS);
