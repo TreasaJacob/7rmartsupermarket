@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="password" value="admin"/>
-  <parameter name="username" value="11111"/>
-  <listeners>
-    <listener class-name="com.obsqura.rmart.generatereport.Listeners"/>
-  </listeners>
-  <test thread-count="5" name="ExtendReport.xml(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.obsqura.rmart_Supermarket.Testscript.LoginPageTest">
+      <class name="com.obsqura.rmart_Supermarket.Testscript.CategoryPageTest">
         <methods>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
-          <include name="verifyUserCannotLoginUsingInvalidUsernameAndPassword"/>
+          <include name="verifyThatUserCanCreateANewCategory"/>
         </methods>
-      </class> <!-- com.obsqura.rmart_Supermarket.Testscript.LoginPageTest -->
+      </class> <!-- com.obsqura.rmart_Supermarket.Testscript.CategoryPageTest -->
     </classes>
-  </test> <!-- ExtendReport.xml(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
