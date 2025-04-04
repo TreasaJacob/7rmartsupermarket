@@ -12,7 +12,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
-public class PageUtility {
+public class PageUtility 
+{
 	public WebDriver driver;
 	public void selectByVisibleText(WebElement element,String text) {
 		Select select = new Select(element);

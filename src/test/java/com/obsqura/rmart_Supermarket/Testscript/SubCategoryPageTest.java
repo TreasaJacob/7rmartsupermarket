@@ -10,7 +10,8 @@ import com.obsqura.rmart_Supermarket.pages.SubCategoryPage;
 import com.obsqura.rmat_utilities.ExcelUtility;
 import com.obsqura.rmat_utilities.FakerUtility;
 
-public class SubCategoryPageTest extends Base {
+public class SubCategoryPageTest extends Base
+{
 	public LoginPage loginpage;
 	public HomePage homepage;
 	public SubCategoryPage subcategorypage;

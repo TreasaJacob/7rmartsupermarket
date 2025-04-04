@@ -23,6 +23,7 @@ import com.obsqura.rmat_utilities.PageUtility;
 import com.obsqura.rmat_utilities.WaitUtility;
 
 public class CategoryPage {
+	
 	public WebDriver driver;
 	PageUtility pageutility = new PageUtility();
 	WaitUtility waitutility = new WaitUtility(); 

@@ -8,7 +8,8 @@ import com.obsqura.rmart_Supermarket.pages.LoginPage;
 import com.obsqura.rmart_Supermarket.pages.ManageProductPage;
 import com.obsqura.rmat_utilities.ExcelUtility;
 
-public class ManageProductPageTest extends Base {
+public class ManageProductPageTest extends Base
+{
 	public LoginPage loginpage;
 	public HomePage homepage;
 	public ManageProductPage manageproduct;

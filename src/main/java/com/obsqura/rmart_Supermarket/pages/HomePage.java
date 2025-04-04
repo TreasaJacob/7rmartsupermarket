@@ -24,6 +24,7 @@ public class HomePage {
 	@FindBy(xpath = "//p[text()='Manage Contact']") WebElement clickcontact;
 	
 	
+	
 	public HomePage clickOnAdminUser()
 	{
 		clickonadmin.click();

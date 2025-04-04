@@ -10,7 +10,8 @@ import com.obsqura.rmart_Supermarket.pages.ManageFooterTextPage;
 import com.obsqura.rmat_utilities.ExcelUtility;
 import com.obsqura.rmat_utilities.FakerUtility;
 
-public class ManageFooterTextPageTest extends Base {
+public class ManageFooterTextPageTest extends Base
+{
 	public HomePage homepage;
 	public ManageFooterTextPage managefootertext;
 	 FakerUtility faker = new FakerUtility() ;

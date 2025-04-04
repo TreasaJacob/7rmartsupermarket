@@ -11,7 +11,8 @@ import com.github.javafaker.Options;
 import com.github.javafaker.PhoneNumber;
 import com.github.javafaker.service.RandomService;
 
-public class FakerUtility {
+public class FakerUtility
+{
 	public String getFakeFirstName() {
 
 		Faker faker = new Faker();

@@ -5,7 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class ManageFooterTextPage {
+public class ManageFooterTextPage
+{
 	public WebDriver driver;
 	public ManageFooterTextPage(WebDriver driver)
 	{

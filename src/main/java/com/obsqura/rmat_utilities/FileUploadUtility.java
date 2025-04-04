@@ -10,7 +10,8 @@ import org.openqa.selenium.WebElement;
 
 import com.github.javafaker.File;
 
-public class FileUploadUtility {
+public class FileUploadUtility 
+{
 	
 	public void sendKeysForFileUpload(WebElement element,String path) {
 		element.sendKeys(path);

@@ -13,6 +13,7 @@ public class AdminPage {
 	PageUtility pageutility = new PageUtility();
 		public AdminPage(WebDriver driver)
 		{
+			
 			this.driver=driver;
 			PageFactory.initElements(driver, this);
 		}

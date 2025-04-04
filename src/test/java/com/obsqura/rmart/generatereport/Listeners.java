@@ -10,7 +10,8 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.obsqura.rmat_utilities.ExtendReportUtility;
 
-public class Listeners implements ITestListener{
+public class Listeners implements ITestListener
+{
 	ExtentTest test;
 
 	ExtentReports extent = ExtendReportUtility.createExtentReports();

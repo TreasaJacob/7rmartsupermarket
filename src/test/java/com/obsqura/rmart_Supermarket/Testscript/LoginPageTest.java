@@ -10,10 +10,11 @@ import com.obsqura.rmart_Supermarket.pages.HomePage;
 import com.obsqura.rmart_Supermarket.pages.LoginPage;
 import com.obsqura.rmat_utilities.ExcelUtility;
 
-public class LoginPageTest extends Base {
+public class LoginPageTest extends Base 
+{
 	public LoginPage loginpage;
 	public HomePage homepage;
-  @Test
+  @Test(groups = {"smoke"})
   public void verifyUserCanLoginUsingValidUsernameAndPassword() throws Exception {
 	  LoginPage loginpage = new LoginPage(driver);
 	  String username = ExcelUtility.readName(1, 0, "Loginpage");
@@ -26,11 +27,11 @@ public class LoginPageTest extends Base {
 	  Assert.assertEquals(actual, expected, Constant.ERRORMESSAGEFORLOGIN);
   }
   
-  @Test
+  @Test(groups = {"smoke"})
   public void verifyUserCannotLoginUsingInvalidUsernameAndPassword() throws Exception {
 	  LoginPage loginpage = new LoginPage(driver);
-	  String username = ExcelUtility.readName(1, 0, "Loginpage");
-	  String password = ExcelUtility.readName(1, 1, "Loginpage");
+	  String username = ExcelUtility.readName(2, 0, "Loginpage");
+	  String password = ExcelUtility.readName(2, 1, "Loginpage");
 	  loginpage.enterUsernameAndPassword(username,password);
 	  homepage= loginpage.clickOnSignin();
 	  boolean text = loginpage.isSignInTextAppearsOnTop();

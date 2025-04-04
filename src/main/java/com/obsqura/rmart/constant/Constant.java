@@ -1,6 +1,7 @@
 package com.obsqura.rmart.constant;
 
-public class Constant {
+public class Constant
+{
 	public static final String ERRORMESSAGEFORLOGIN = "Login failed" ;
 
 	public static final String ERRORMESSAGEWHILELOGINWITHINVALIDCREDENTIALS = "Text not displaying";
@@ -28,6 +29,7 @@ public class Constant {
 	public static final String IMAGE = System.getProperty("user.dir")+"//src//test//resources//orange.PNG";
 	
 	public static final String EXCELPATH = System.getProperty("user.dir")+"//src//test//resources//Test Data.xlsx";
-
+    
+	public static final String CONFIGFILE = System.getProperty("user.dir") + "//src//main//resources//config.properties";
 
 }

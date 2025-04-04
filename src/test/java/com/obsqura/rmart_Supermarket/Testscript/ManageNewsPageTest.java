@@ -9,7 +9,8 @@ import com.obsqura.rmart_Supermarket.pages.LoginPage;
 import com.obsqura.rmart_Supermarket.pages.ManageNewsPage;
 import com.obsqura.rmat_utilities.ExcelUtility;
 
-public class ManageNewsPageTest extends Base {
+public class ManageNewsPageTest extends Base
+{
 	public LoginPage loginpage;
 	public HomePage homepage;
 	public ManageNewsPage managenews;

@@ -9,7 +9,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.obsqura.rmart.constant.Constant;
 
-public class WaitUtility {
+public class WaitUtility 
+{
 public WebDriver driver;
 public void elementToBeClickable(WebDriver driver,WebElement element)
 {

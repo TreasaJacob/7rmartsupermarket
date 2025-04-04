@@ -5,7 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class ManageNewsPage {
+public class ManageNewsPage 
+{
 	
 	public WebDriver driver;
 	public ManageNewsPage(WebDriver driver)

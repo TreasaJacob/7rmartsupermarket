@@ -11,7 +11,8 @@ import com.obsqura.rmart_Supermarket.pages.LoginPage;
 import com.obsqura.rmat_utilities.ExcelUtility;
 import com.obsqura.rmat_utilities.FakerUtility;
 
-public class AdminPageTest extends Base {
+public class AdminPageTest extends Base
+{
 	public LoginPage loginpage;
 	public HomePage homepage;
 	public AdminPage adminpage;

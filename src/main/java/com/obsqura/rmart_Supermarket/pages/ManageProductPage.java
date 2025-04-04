@@ -8,7 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 import com.obsqura.rmat_utilities.PageUtility;
 import com.obsqura.rmat_utilities.WaitUtility;
 
-public class ManageProductPage {
+public class ManageProductPage 
+{
 	public WebDriver driver;
 	PageUtility pageutility = new PageUtility();
 	WaitUtility waitutility = new WaitUtility();

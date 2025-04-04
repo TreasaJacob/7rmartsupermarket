@@ -9,7 +9,8 @@ import com.obsqura.rmart_Supermarket.pages.LoginPage;
 import com.obsqura.rmart_Supermarket.pages.ManageContactPage;
 import com.obsqura.rmat_utilities.ExcelUtility;
 
-public class ManageContactPageTest extends Base {
+public class ManageContactPageTest extends Base
+{
 	public LoginPage loginpage;
 	public HomePage homepage;
 	public ManageContactPage contactpage;

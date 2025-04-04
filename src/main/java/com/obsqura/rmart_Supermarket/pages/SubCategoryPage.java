@@ -18,7 +18,8 @@ import com.obsqura.rmat_utilities.FileUploadUtility;
 import com.obsqura.rmat_utilities.PageUtility;
 import com.obsqura.rmat_utilities.WaitUtility;
 
-public class SubCategoryPage {
+public class SubCategoryPage
+{
 	public WebDriver driver;
 	WaitUtility wait = new WaitUtility();
 	PageUtility pageutility = new PageUtility();

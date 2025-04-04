@@ -9,7 +9,8 @@ import com.obsqura.rmart_Supermarket.pages.HomePage;
 import com.obsqura.rmart_Supermarket.pages.LoginPage;
 import com.obsqura.rmat_utilities.ExcelUtility;
 
-public class HomePageTest extends Base{
+public class HomePageTest extends Base
+{
 	public LoginPage loginpage;
 	public HomePage homepage;
 	
